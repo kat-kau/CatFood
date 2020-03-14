@@ -52,11 +52,23 @@
     <Compile Include="Autoriz.Designer.cs">
       <DependentUpon>Autoriz.cs</DependentUpon>
     </Compile>
-    <Compile Include="EnterAddParam.cs">
+    <Compile Include="EnterAddParamElderly.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EnterAddParam.Designer.cs">
-      <DependentUpon>EnterAddParam.cs</DependentUpon>
+    <Compile Include="EnterAddParamElderly.Designer.cs">
+      <DependentUpon>EnterAddParamElderly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterAddParamKitten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterAddParamKitten.Designer.cs">
+      <DependentUpon>EnterAddParamKitten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnterAddParamMiddle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterAddParamMiddle.Designer.cs">
+      <DependentUpon>EnterAddParamMiddle.cs</DependentUpon>
     </Compile>
     <Compile Include="EnterInitialParam.cs">
       <SubType>Form</SubType>
@@ -66,11 +78,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Autoriz.resx">
       <DependentUpon>Autoriz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EnterAddParam.resx">
-      <DependentUpon>EnterAddParam.cs</DependentUpon>
+    <EmbeddedResource Include="EnterAddParamElderly.resx">
+      <DependentUpon>EnterAddParamElderly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterAddParamKitten.resx">
+      <DependentUpon>EnterAddParamKitten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterAddParamMiddle.resx">
+      <DependentUpon>EnterAddParamMiddle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EnterInitialParam.resx">
       <DependentUpon>EnterInitialParam.cs</DependentUpon>
@@ -83,7 +107,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\pregnant.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

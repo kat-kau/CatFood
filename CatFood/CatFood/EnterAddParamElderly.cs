@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CatFood
 {
-    public partial class EnterAddParam : Form
+    public partial class EnterAddParamElderly : Form
     {
-        public EnterAddParam()
+        public EnterAddParamElderly()
         {
             InitializeComponent();
         }
@@ -26,16 +26,6 @@ namespace CatFood
         {
             Application.OpenForms[1].Show();
             this.Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void EnterAddParam_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

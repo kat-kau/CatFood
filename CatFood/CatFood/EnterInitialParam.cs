@@ -33,7 +33,7 @@ namespace CatFood
 
         }
 
-        
+
         private void button3_Click(object sender, EventArgs e)
         {
 
@@ -61,9 +61,19 @@ namespace CatFood
 
             if (Properties.Settings.Default.age != "" && Properties.Settings.Default.progeny != "")
             {
-                EnterAddParam ad = new EnterAddParam();
-                ad.Show(this);
-                this.Hide();
+                if (Properties.Settings.Default.progeny == "yes")
+                {
+                    Result res = new Result();
+                    res.Show(this);
+                    this.Hide();
+                }
+                else
+                {
+                    EnterAddParamKitten ad = new EnterAddParamKitten();
+                    ad.Show(this);
+                    this.Hide();
+                }
+
             }
         }
     }
